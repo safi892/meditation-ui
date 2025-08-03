@@ -62,7 +62,7 @@ fun WelcomeScreen(onNavigateToWellness: () -> Unit) {
         Row {
             Text(
                 text = "Hi, Name ",
-                color = AppTheme.colors.onBackground,
+                color = AppTheme.colors.secondaryBackground,
                 style = AppTheme.typography.pageHeading,
             )
         }
@@ -73,7 +73,7 @@ fun WelcomeScreen(onNavigateToWellness: () -> Unit) {
         Row {
             Text(
                 text = "Let's get started with your wellness journey. What are your primary goals? ",
-                color = AppTheme.colors.onBackground,
+                color = AppTheme.colors.secondaryBackground,
                 style = AppTheme.typography.headingThin,
                 textAlign = TextAlign.Left,
                 modifier = Modifier.fillMaxWidth()
@@ -166,7 +166,7 @@ private fun MeditationExperienceSection(fontFamily: FontFamily) { // Added fontF
     Column {
         Text(
             text = "What's your experience level with meditation?",
-            color = AppTheme.colors.onBackground,
+            color = AppTheme.colors.secondaryBackground,
             style = AppTheme.typography.headingThin,
             textAlign = TextAlign.Left,
             modifier = Modifier.fillMaxWidth()

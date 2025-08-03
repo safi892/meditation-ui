@@ -43,7 +43,7 @@ fun WellnessHubScreen(onNavigateToHome: () -> Unit = {}) {
         Row {
             Text(
                 text = "Find your balance",
-                color = AppTheme.colors.onBackground, // Use theme text color
+                color = AppTheme.colors.secondaryBackground, // Use theme text color
                 style = AppTheme.typography.pageHeading
 
             )
@@ -100,7 +100,7 @@ private fun MeditationFocusSection() {
     Column {
         Text(
             text = "Meditation Focus",
-            color = AppTheme.colors.onBackground,
+            color = AppTheme.colors.secondaryBackground,
             style = AppTheme.typography.heading,
             textAlign = TextAlign.Left,
             modifier = Modifier.fillMaxWidth()
@@ -120,7 +120,7 @@ private fun MeditationFocusSection() {
                     containerColor = if (isSelected) AppTheme.colors.primary
                         else AppTheme.colors.secondary,
                     contentColor   = if (isSelected) AppTheme.colors.textPrimary
-                    else AppTheme.colors.onBackground,
+                    else AppTheme.colors.secondaryBackground,
                     onClick = {
                         // toggle
                         selected.value = selected.value
@@ -146,7 +146,7 @@ private fun ActivitiesSection() {
     Column {
         Text(
             text = "Activities",
-            color = AppTheme.colors.onBackground, // Use theme text color
+            color = AppTheme.colors.secondaryBackground, // Use theme text color
             style = AppTheme.typography.heading,
             textAlign = TextAlign.Left,
             modifier = Modifier.fillMaxWidth()
@@ -165,7 +165,7 @@ private fun ActivitiesSection() {
                     containerColor = if (isSelected) AppTheme.colors.primary
                     else AppTheme.colors.secondary,
                     contentColor = if (isSelected) AppTheme.colors.textPrimary
-                    else AppTheme.colors.onBackground,
+                    else AppTheme.colors.secondaryBackground,
                     onClick = {
                         // toggle selection
                         selected.value = selected.value
